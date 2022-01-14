@@ -1,4 +1,4 @@
-//Jva ile not ortalamasi hesaplayan program
+//Java-ile-not-ortalamasi-hesaplayan-program
 
 import java.util.Scanner;
 
