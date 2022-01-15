@@ -15,10 +15,10 @@ public class MyClass {
         kdvDahilMiktar = (paraMiktari + (paraMiktari * kdvTutari));
         
         
-        System.out.print("KDV'siz Miktar : "  + paraMiktari);
+        System.out.println("KDV'siz Miktar : "  + paraMiktari);
         
-        System.out.print("KDV Miktari : "  + kdvTutari); 
+        System.out.println("KDV Miktari : "  + kdvTutari); 
         
-        System.out.print("KDV'li Miktar : "  + kdvDahilMiktar); 
+        System.out.println("KDV'li Miktar : "  + kdvDahilMiktar); 
     }
 }
