@@ -8,6 +8,7 @@ public class MyClass {
      
      Scanner input = new Scanner(System.in);
      
+     System.out.print("Kilometreyi giriniz : ");
      kilometre = input.nextDouble();
      
      acilisUcreti = 10;
