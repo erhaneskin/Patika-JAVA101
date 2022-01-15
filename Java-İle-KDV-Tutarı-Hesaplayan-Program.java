@@ -1,24 +1,28 @@
+import java.util.Scanner;
+public class PatikaDenemeler {
+    public static void main(String[] args) {
+        double paraMiktari,kdvOrani ,kdvTutari, kdvDahilMiktar;
 
-public class MyClass {
-    public static void main(String args[]) {
-         
-       double paraMiktari, kdvTutari, kdvDahilMiktar; 
- 
-       Scanner input = new Scanner(System.in);
-        
+        Scanner input = new Scanner(System.in);
+
         System.out.print("Lutfen para miktarini giriniz : ");
-        
+
         paraMiktari = input.nextDouble();
-        
-        kdvTutari = (paraMiktari >= 1000) ? 0.08 : 0.18;
-         
-        kdvDahilMiktar = (paraMiktari + (paraMiktari * kdvTutari));
-        
-        
+
+        kdvOrani = (paraMiktari >= 1000) ? 0.08 : 0.18;
+
+        kdvTutari = paraMiktari * kdvOrani;
+
+        kdvDahilMiktar = paraMiktari + kdvTutari;
+
+
         System.out.println("KDV'siz Miktar : "  + paraMiktari);
-        
-        System.out.println("KDV Miktari : "  + kdvTutari); 
-        
-        System.out.println("KDV'li Miktar : "  + kdvDahilMiktar); 
+
+        System.out.println("KDV Orani : "  + kdvOrani);
+
+        System.out.println("KDV Tutarı : "  + kdvTutari);
+
+        System.out.println("KDV'li Miktar : "  + kdvDahilMiktar);
     }
 }
+
